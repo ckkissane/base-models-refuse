@@ -1,0 +1,92 @@
+[
+  {
+    "model_name": "qwen1.5-0.5b",
+    "intervention": "addition",
+    "dataset": "harmful",
+    "baseline_refusal_score": 0.47,
+    "chat_intervention_refusal_score": 0.99,
+    "base_intervention_refusal_score": 0.98,
+    "prompt_template": "<|im_start|>user\n{instruction}<|im_end|>\n<|im_start|>assistant\n"
+  },
+  {
+    "model_name": "qwen1.5-0.5b",
+    "intervention": "addition",
+    "dataset": "harmless",
+    "baseline_refusal_score": 0.01,
+    "chat_intervention_refusal_score": 0.97,
+    "base_intervention_refusal_score": 0.84,
+    "prompt_template": "<|im_start|>user\n{instruction}<|im_end|>\n<|im_start|>assistant\n"
+  },
+  {
+    "model_name": "qwen1.5-0.5b",
+    "intervention": "ablation",
+    "dataset": "harmful",
+    "baseline_refusal_score": 0.47,
+    "chat_intervention_refusal_score": 0.03,
+    "base_intervention_refusal_score": 0.01,
+    "prompt_template": "<|im_start|>user\n{instruction}<|im_end|>\n<|im_start|>assistant\n"
+  },
+  {
+    "model_name": "gemma-2-9b",
+    "intervention": "addition",
+    "dataset": "harmful",
+    "baseline_refusal_score": 0.41,
+    "chat_intervention_refusal_score": 0.99,
+    "base_intervention_refusal_score": 0.88,
+    "prompt_template": "<start_of_turn>user:\n{instruction}<end_of_turn>\n<start_of_turn>assistant:\n"
+  },
+  {
+    "model_name": "gemma-2-9b",
+    "intervention": "addition",
+    "dataset": "harmless",
+    "baseline_refusal_score": 0.01,
+    "chat_intervention_refusal_score": 0.85,
+    "base_intervention_refusal_score": 0.62,
+    "prompt_template": "<start_of_turn>user:\n{instruction}<end_of_turn>\n<start_of_turn>assistant:\n"
+  },
+  {
+    "model_name": "gemma-2-9b",
+    "intervention": "ablation",
+    "dataset": "harmful",
+    "baseline_refusal_score": 0.41,
+    "chat_intervention_refusal_score": 0.03,
+    "base_intervention_refusal_score": 0.02,
+    "prompt_template": "<start_of_turn>user:\n{instruction}<end_of_turn>\n<start_of_turn>assistant:\n"
+  },
+  {
+    "model_name": "llama-7b",
+    "intervention": "addition",
+    "dataset": "harmful",
+    "baseline_refusal_score": 0.55,
+    "chat_intervention_refusal_score": 0.83,
+    "base_intervention_refusal_score": 0.83,
+    "prompt_template": "USER: {instruction}\nASSISTANT:"
+  },
+  {
+    "model_name": "llama-7b",
+    "intervention": "addition",
+    "dataset": "harmless",
+    "baseline_refusal_score": 0.08,
+    "chat_intervention_refusal_score": 0.65,
+    "base_intervention_refusal_score": 0.68,
+    "prompt_template": "USER: {instruction}\nASSISTANT:"
+  },
+  {
+    "model_name": "llama-7b",
+    "intervention": "ablation",
+    "dataset": "harmful",
+    "baseline_refusal_score": 0.55,
+    "chat_intervention_refusal_score": 0.52,
+    "base_intervention_refusal_score": 0.46,
+    "prompt_template": "USER: {instruction}\nASSISTANT:"
+  },
+  {
+    "model_name": "vicuna-7b-v1.1",
+    "intervention": "ablation",
+    "dataset": "harmful",
+    "baseline_refusal_score": 0.86,
+    "chat_intervention_refusal_score": 0.12,
+    "base_intervention_refusal_score": 0.85,
+    "prompt_template": "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user's questions.\nUSER: {instruction}\nASSISTANT:"
+  }
+]
