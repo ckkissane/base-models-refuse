@@ -1,6 +1,6 @@
 Code to reproduce key results accompanying "Base LLMs refuse too".
 
-* [Blog post](TODO)
+* [Blog post](https://www.alignmentforum.org/posts/YWo2cKJgL7Lg8xWjj/base-llms-refuse-too)
 
 ## Contents
 
